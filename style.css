@@ -1,0 +1,152 @@
+/* --- Reset e ROLAGEM SUAVE DAS ÂNCORAS --- */
+html {
+    scroll-behavior: smooth; /* ISSO FAZ A ÂNCORA FUNCIONAR DESLIZANDO */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfbf7;
+}
+
+/* --- Cabeçalho Fixo --- */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* --- Layout Principal --- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Compensação para a âncora não parar debaixo do menu fixo */
+section, footer {
+    scroll-margin-top: 150px; 
+    margin-bottom: 60px;
+}
+
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    border-bottom: 2px solid #bdc3c7;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#home p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #bdc3c7;
+    margin: 40px 0;
+}
+
+/* --- Galeria --- */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 30px;
+}
+
+.item-galeria {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f4f1eb;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.item-galeria h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.item-galeria p {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* --- Créditos --- */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 0; /* Tira a margem de baixo para o rodapé colar no fim da página */
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-bottom: none;
+}
+.obra-link { display: block; }
+.obra-link:focus-visible { outline: 3px solid #e67e22; outline-offset: 4px; }
+.fontes-imagens { max-width: 900px; margin: 20px auto; overflow-wrap: anywhere; }
+.fontes-imagens summary { cursor: pointer; }
+.fontes-imagens ul { text-align: left; padding-left: 20px; }
+.fontes-imagens a { color: #ecf0f1; }
+@media (max-width: 480px) { header h1 { font-size: 1.35rem; } section, footer { scroll-margin-top: 150px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

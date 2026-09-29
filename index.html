@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Clássica Europeia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação com as ÂNCORAS -->
+    <header>
+        <h1>Arte Clássica Europeia</h1>
+        <nav>
+            <ul>
+                <!-- O href com "#" aponta para o id correspondente lá embaixo -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#creditos">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: ALVO DA ÂNCORA #home -->
+        <section id="home">
+            <h2>História da Arte Clássica Europeia</h2>
+            <p>A <strong>Arte Clássica</strong> refere-se predominantemente à arte produzida na Antiguidade Clássica (Grécia e Roma antigas), bem como aos movimentos posteriores que se inspiraram em seus ideais, como o Renascimento e o Neoclassicismo.</p>
+            <p>Os gregos antigos valorizavam a proporção e a harmonia. Os romanos absorveram a cultura grega, mas adicionaram um senso de realismo e engenharia monumental (como o Coliseu).</p>
+            <p>Durante o <strong>Renascimento</strong>, artistas como Leonardo da Vinci e Michelangelo resgataram esses valores clássicos. Mais tarde, no século XVIII, o <strong>Neoclassicismo</strong> trouxe de volta a pureza das formas greco-romanas.</p>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO 2: ALVO DA ÂNCORA #galeria -->
+        <section id="galeria">
+            <h2>Galeria de Obras</h2>
+            
+            <div class="grid-galeria">
+                <div class="item-galeria">
+                    <a class="obra-link" href="images/venus-de-milo.jpg" target="_blank" rel="noopener" aria-label="Ampliar: Vênus de Milo"><img src="images/venus-de-milo.jpg" alt="Vênus de Milo" width="960" height="960" loading="lazy" decoding="async"></a>
+                    <h3>Vênus de Milo</h3>
+                    <p>Antiguidade Grega</p>
+                </div>
+                
+                <div class="item-galeria">
+                    <a class="obra-link" href="images/davi.jpg" target="_blank" rel="noopener" aria-label="Ampliar: Davi de Michelangelo"><img src="images/davi.jpg" alt="Davi de Michelangelo" width="960" height="960" loading="lazy" decoding="async"></a>
+                    <h3>Davi</h3>
+                    <p>Michelangelo</p>
+                </div>
+                
+                <div class="item-galeria">
+                    <a class="obra-link" href="images/nascimento-de-venus.jpg" target="_blank" rel="noopener" aria-label="Ampliar: O Nascimento de Vênus"><img src="images/nascimento-de-venus.jpg" alt="O Nascimento de Vênus" width="960" height="960" loading="lazy" decoding="async"></a>
+                    <h3>O Nascimento de Vênus</h3>
+                    <p>Sandro Botticelli</p>
+                </div>
+                
+                <div class="item-galeria">
+                    <a class="obra-link" href="images/partenon.jpg" target="_blank" rel="noopener" aria-label="Ampliar: Partenon"><img src="images/partenon.jpg" alt="Partenon" width="960" height="960" loading="lazy" decoding="async"></a>
+                    <h3>O Partenon</h3>
+                    <p>Atenas, Grécia</p>
+                </div>
+            </div> <!-- FIM DO GRID DA GALERIA (Se isso não fechar, os créditos entram aqui!) -->
+        </section> <!-- FIM DA SEÇÃO GALERIA -->
+    </main>
+
+    <!-- SEÇÃO 3: ALVO DA ÂNCORA #creditos -->
+    <footer id="creditos">
+        <h2>Créditos</h2>
+        <p>Desenvolvido por Matheus Bucher,Alex Miguel, Gregory, Arthur .</p>
+        <p>Site Academico, sem fins lucrativos.</p>
+        <details class="fontes-imagens"><summary>Fontes e licenças das imagens</summary><ul><li><a href="https://commons.wikimedia.org/wiki/File:Venus_de_Milo_Louvre_Ma399_n4.jpg">Venus de Milo Louvre Ma399 n4.jpg</a> — 
+Unknown artistUnknown artist. Public domain.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Michelangelo%27s_David_2015.jpg">Michelangelo's David 2015.jpg</a> — Livioandronico2013. <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg">Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg</a> — Sandro Botticelli. Public domain.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Parthenon_from_west.jpg">Parthenon from west.jpg</a> — User:Mountain. Public domain.</li></ul></details>
+        <p>&copy; 2026 - Arte Clássica Europeia.</p>
+    </footer>
+
+</body>
+</html> 
